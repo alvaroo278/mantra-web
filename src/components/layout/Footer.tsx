@@ -22,62 +22,9 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <NewsletterForm />
+            <h3 className="text-xl font-bold mb-4 text-mantra-gold">Mantra</h3>
+            <p className="text-gray-300"># Dance With Us.</p>
           </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-mantra-gold">
-              Síguenos
-            </h4>
-            <div className="flex space-x-4">
-              <a
-                href={config.facebook_url}
-                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200"
-                aria-label="Síguenos en Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a
-                href={config.instagram_url}
-                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200"
-                aria-label="Síguenos en Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a
-                href={config.soundcloud_url}
-                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200"
-                aria-label="Síguenos en Soundcloud"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaSoundcloud />
-              </a>
-              <a
-                href={config.beatport_url}
-                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200"
-                aria-label="Síguenos en Beatport"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiBeatport />
-              </a>
-              <a
-                href={config.spotify_url}
-                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200"
-                aria-label="Síguenos en Spotify"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiSpotify />
-              </a>
-            </div>
-          </div>
-
           <div>
             <h4 className="text-lg font-semibold mb-4 text-mantra-gold">
               Navegación Rápida
@@ -100,8 +47,59 @@ export const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 text-mantra-gold">Mantra</h3>
-            <p className="text-gray-300"># Dance With Us.</p>
+            <h4 className="text-lg font-semibold mb-4 text-mantra-gold">
+              Síguenos
+            </h4>
+            <div className="flex space-x-4">
+              <a
+                href={config.facebook_url}
+                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200 p-1"
+                aria-label="Síguenos en Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href={config.instagram_url}
+                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200 p-1"
+                aria-label="Síguenos en Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href={config.soundcloud_url}
+                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200 p-1"
+                aria-label="Síguenos en Soundcloud"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaSoundcloud className="w-6 h-6" />
+              </a>
+              <a
+                href={config.beatport_url}
+                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200 p-1"
+                aria-label="Síguenos en Beatport"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiBeatport className="w-6 h-6" />
+              </a>
+              <a
+                href={config.spotify_url}
+                className="text-gray-300 hover:text-mantra-gold transition-colors duration-200 p-1"
+                aria-label="Síguenos en Spotify"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiSpotify className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <NewsletterForm />
           </div>
         </div>
 
